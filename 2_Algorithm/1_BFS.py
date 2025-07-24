@@ -1,5 +1,6 @@
 from collections import deque
 
+#bfs function
 def bfs(graph,start):
     visited = set()
     queue = deque([start])
@@ -9,6 +10,7 @@ def bfs(graph,start):
             print(node)
             visited.add(node)
             queue.extend(graph[node])
+# end
 
 graph = {
     0 : [1,2],
